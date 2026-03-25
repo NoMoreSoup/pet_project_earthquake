@@ -110,9 +110,7 @@ services:
       - "9001:9001"
 
   metabase:
-    build:
-      context: .
-      dockerfile: ./metabase/Dockerfile
+    image: metabase/metabase:latest
     container_name: metabase
     ports:
       - "3000:3000"
